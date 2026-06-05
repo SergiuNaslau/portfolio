@@ -163,19 +163,17 @@ nav.scrolled{padding:14px 48px}
 /* Skills / offers grid */
 .offer-list{display:flex;flex-direction:column;gap:0;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
 .offer-item{
-  display:block;
+  display:flex;
+  flex-direction:column;
   border-bottom:1px solid var(--border);
   background:var(--bg-card);
   transition:background .2s;
+  padding:18px 22px;
 }
 .offer-item:last-child{border-bottom:none}
 .offer-item:hover{background:#f0f4ff}
-.offer-icon{
-  display:flex;align-items:center;justify-content:center;
-  font-size:18px;
-  padding:20px 0;
-}
-.offer-text{padding:18px 22px}
+.offer-icon{display:none}
+.offer-text{}
 .offer-name{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:3px}
 .offer-desc{font-size:12px;color:var(--ink-muted);font-weight:300;line-height:1.5}
 
@@ -624,7 +622,6 @@ footer{
 
   <div class="hero-content">
     <div class="hero-left">
-      <div class="hero-eyebrow">UX Designer · Cognizant</div>
       <h1 class="hero-h1">
         Turning<br>
         complex<br>
@@ -683,7 +680,7 @@ footer{
       <div class="about-left fade-up delay-1">
         <div class="about-pull">
           I don't just design screens.<br>
-          I <em>interpret problems</em> — and build<br>the case for the right solution.
+          I <em>interpret problems</em>.<br>I build the case for the right solution.
         </div>
         <p class="about-body">
           As a UX designer at Cognizant, I work at the intersection of user needs, business constraints, and technical reality. My approach starts from research — not assumptions — and the empathy maps, journey analyses, and stakeholder sessions I run aren't process for process's sake. They're the work that gets the right ideas greenlit.
