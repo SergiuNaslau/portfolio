@@ -702,7 +702,7 @@ footer{
           I <em>interpret problems</em>.<br>I build the case for the right solution.
         </div>
         <p class="about-body">
-          As a UX designer at Cognizant, I work at the intersection of user needs, business constraints, and technical reality. My approach starts from research — not assumptions — and the empathy maps, journey analyses, and stakeholder sessions I run aren't process for process's sake. They're the work that gets the right ideas greenlit.
+          As a UX designer, I work at the intersection of user needs, business constraints, and technical reality. My approach starts from research — not assumptions — and the empathy maps, journey analyses, and stakeholder sessions I run aren't process for process's sake. They're the work that gets the right ideas greenlit.
         </p>
         <p class="about-body">
           Over the past years I've led the UX direction for AI-assisted feedback tools, internal data platforms, VR research environments, and medical portals. <strong>The common thread: making complex systems feel simple, without hiding the complexity that matters.</strong>
@@ -1032,7 +1032,7 @@ footer{
             <div class="cc-avatar">SN</div>
             <div>
               <div class="cc-name">Sergiu Naslau</div>
-              <div class="cc-role">Senior UX Designer · Cognizant</div>
+              <div class="cc-role">Senior UX Designer</div>
             </div>
           </div>
           <div class="cc-availability">
@@ -1059,31 +1059,3 @@ footer{
   </div>
   <div class="footer-right">
     <a href="#about">About</a>
-    <a href="#work">Work</a>
-    <a href="#process">Process</a>
-    <a href="#contact">Contact</a>
-    <a href="https://linkedin.com/in/sergiuNaslau" target="_blank">LinkedIn</a>
-  </div>
-</footer>
-
-<script>
-// Nav scroll shrink
-const nav = document.getElementById('main-nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 80);
-});
-
-// Scroll-triggered fade-up
-const fadeEls = document.querySelectorAll('.fade-up');
-const obs = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-fadeEls.forEach(el => obs.observe(el));
-
-// Stagger project cards
-document.querySelectorAll('.project-card').forEach((el, i) => {
-  el.style.transitionDelay = `${i * 0.07}s`;
-});
-</script>
-</body>
-</html>
